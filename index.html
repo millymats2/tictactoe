@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>TIC-TAC-TOE</title>
+</head>
+<body>
+<!--player names and form-->
+    <center><heading class="heading"><h1>TIC-TAC-TOE</h1></heading></center>
+    <center><form>
+        <label>PLAYER O NAME:</label>
+        <p><input id="playerOName" type:"text" name="message" /></p> </form>
+        <form><p><label>PLAYER X NAME:</label></p>
+        <input id="playerXName" type:"text" name="message"/></form>
+        <p><button type="submit" class="submitButton" onClick="submit">SUBMIT</button></p>
+
+<!--directions-->
+<h id="directions">Player O begins. Take turns placing marks on the board. First to get 3 in a row wins!</h>
+<!--board-->
+    <div id="board"> 
+      <!--<div class="cell" index="0,0"></div>
+        <div class="cell" index="0,1"></div>
+        <div class="cell" index="0,2"></div>
+        <div class="cell" index="1,0"></div>
+        <div class="cell" index="1,1"></div>
+        <div class="cell" index="1,2"></div>
+        <div class="cell" index="2,0"></div>
+        <div class="cell" index="2,1"></div>
+        <div class="cell" index="2,2"></div>-->
+    </div>   
+<!--current player-->
+<h3 id="winner"></h3>
+<h3 id="draw"></h3>
+<!--game over-->
+    <div class="game-over" id="gameOver">
+        <div data-game-over></div>
+        <button type="submit" class="restartButton">RESTART</button>
+        
+</html>
